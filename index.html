@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meals</title>
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
         tailwind.config = {
@@ -17,8 +20,9 @@
                 color1: '#ccd5ae',
                 color2: '#E9EDC9',
                 color3: '#FEFAE0',
-                color4: '#FAEDCD',
+                color4: '#EBD9AE',
                 color5: '#D4A373',
+                color6: '#3D2E21',
               }
             }
           }
@@ -27,34 +31,17 @@
 </head>
 <body class="bg-color3 font-['Bodoni Moda']">
     
-    <div class="search-container flex items-center w-1/2 mx-auto py-40 px-20">
-        <input id="btn-search" class="w-full h-8 border-color5" type="text" placeholder="Search a category, ex: fish">
-        <button class="p-3 m-3 h-8 bg-color5 text-color3 flex items-center" onclick="loadMeals()">Search</button>
+    <div class="search-container w-1/2 mx-auto py-40 px-20">
+        <div class="container-temp flex items-center">
+          <input id="search" class="w-full h-8 border border-color6 bg-color4" type="text" placeholder="Search a category. ex: fish">
+          <button id="btn-search" class="p-3 m-3 h-8 bg-color4 hover:brightness-95 text-color6 border border-color6 flex items-center active:translate-y-1 active:brightness-75" onclick="loadMeals()">Search</button>
+        </div>
+        <div class="empty-text text-center" id="empty-text"></div>
     </div>
 
     <div class="meals-container" id="meals-container">
-        <div class="wrapper max-w-[65rem] mx-auto grid grid-cols-3 gap-8" id="wrapper">
-            <!-- <img src="" alt=""> -->
-            <!-- <div class="food-item">
-                <img src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg" alt="No image available" class="demo-picture w-full h-[300px] bg-black object-cover"></img>
-                <div class="name pl-3 pt-2 text-2xl">Fish Fofos</div>
-                <div class="description pl-3 pb-3">British, Seafood</div>
-            </div>
-            <div class="food-item">
-                <div class="demo-picture w-[300px] h-[300px] bg-black"></div>
-                <div class="name">Fish Fofos</div>
-                <div class="description">British, Seafood</div>
-            </div>
-            <div class="food-item">
-                <div class="demo-picture w-[300px] h-[300px] bg-black"></div>
-                <div class="name">Fish Fofos</div>
-                <div class="description">British, Seafood</div>
-            </div>
-            <div class="food-item">
-                <div class="demo-picture w-[300px] h-[300px] bg-black"></div>
-                <div class="name">Fish Fofos</div>
-                <div class="description">British, Seafood</div>
-            </div> -->
+        <div class="wrapper max-w-[65rem] mx-auto grid grid-cols-3 gap-8 mb-40" id="wrapper">
+
         </div>
     </div>
 
