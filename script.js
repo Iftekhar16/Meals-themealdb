@@ -27,7 +27,7 @@ function doStuff(data){
     if (Array.isArray(data.meals) && data.meals.length) {
         for (i in data.meals){
             document.getElementById('wrapper').innerHTML += `
-                <div class="food-item border border-color6 bg-color4 hover:shadow-2xl transition">
+                <div class="food-item border border-color6 bg-color4 hover:shadow-2xl transition hover:-translate-y-1">
                     <img src="${data.meals[i].strMealThumb}" alt="No image available" class="demo-picture w-full h-[300px] object-cover"></img>
                     <div class="name pl-3 pt-3 text-2xl text-color6">${data.meals[i].strMeal}</div>
                     <div class="description pl-3 pb-3 text-color6">${data.meals[i].strArea}, ${data.meals[i].strCategory}</div>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Meals!</title>
+    <title>Get Meals!</title>
+    <link rel="icon" href="images/restaurant.png">
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <!-- font -->
@@ -33,7 +34,7 @@
     
     <div class="search-container w-1/2 mx-auto py-40 px-20">
         <div class="container-temp flex items-center">
-          <input id="search" class="w-full h-8 border border-color6 bg-color4" type="text" placeholder="Search a category. ex: fish">
+          <input id="search" class="w-full h-8 border border-color6 bg-color4 focus:border-0 focus:outline-none" type="text" placeholder="Search a category. ex: fish">
           <button id="btn-search" class="p-3 m-3 h-8 bg-color4 hover:brightness-95 text-color6 border border-color6 flex items-center active:translate-y-1 active:brightness-75" onclick="loadMeals()">Search</button>
         </div>
         <div class="empty-text text-center" id="empty-text"></div>

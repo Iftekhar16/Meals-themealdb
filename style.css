@@ -1,12 +1,15 @@
-/* ::-webkit-input-placeholder{
-    color: #3D2E21;
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ffffff;
 }
-
-:-ms-input-placeholder{
-    color: rgb(17, 16, 16);
-} */
-
-
+::-webkit-scrollbar-thumb {
+    background-color: #3D2E21;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #EBD9AE;
+}
 
 
 body{
