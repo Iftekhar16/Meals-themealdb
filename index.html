@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                color1: '#ccd5ae',
+                color2: '#E9EDC9',
+                color3: '#FEFAE0',
+                color4: '#FAEDCD',
+                color5: '#D4A373',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-color3 font-['Bodoni Moda']">
+    
+    <div class="search-container flex items-center w-1/2 mx-auto py-40 px-20">
+        <input id="btn-search" class="w-full h-8 border-color5" type="text" placeholder="Search a category, ex: fish">
+        <button class="p-3 m-3 h-8 bg-color5 text-color3 flex items-center" onclick="loadMeals()">Search</button>
+    </div>
+
+    <div class="meals-container" id="meals-container">
+        <div class="wrapper max-w-[65rem] mx-auto grid grid-cols-3 gap-8" id="wrapper">
+            <!-- <img src="" alt=""> -->
+            <!-- <div class="food-item">
+                <img src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg" alt="No image available" class="demo-picture w-full h-[300px] bg-black object-cover"></img>
+                <div class="name pl-3 pt-2 text-2xl">Fish Fofos</div>
+                <div class="description pl-3 pb-3">British, Seafood</div>
+            </div>
+            <div class="food-item">
+                <div class="demo-picture w-[300px] h-[300px] bg-black"></div>
+                <div class="name">Fish Fofos</div>
+                <div class="description">British, Seafood</div>
+            </div>
+            <div class="food-item">
+                <div class="demo-picture w-[300px] h-[300px] bg-black"></div>
+                <div class="name">Fish Fofos</div>
+                <div class="description">British, Seafood</div>
+            </div>
+            <div class="food-item">
+                <div class="demo-picture w-[300px] h-[300px] bg-black"></div>
+                <div class="name">Fish Fofos</div>
+                <div class="description">British, Seafood</div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
