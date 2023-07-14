@@ -11,6 +11,22 @@
     background-color: #EBD9AE;
 }
 
+input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #FEFAE0;
+    filter: brightness(200%);
+}
+input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+    color: FEFAE0;
+    filter: brightness(200%);
+}
+input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+    color: FEFAE0;
+    filter: brightness(200%);
+}
+input[type="email"]:-moz-placeholder { /* Firefox 18- */
+    color: FEFAE0;
+    filter: brightness(200%);
+}
 
 body{
     font-family: 'Bodoni Moda', serif;
