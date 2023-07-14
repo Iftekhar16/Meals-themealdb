@@ -7,6 +7,7 @@ document.getElementById('search').addEventListener("keypress", function(event){
 
 
 function loadMeals(){
+    document.getElementById('empty-text').innerHTML = 'Loading...'
     let searchResult = document.getElementById('search').value
     if(searchResult != ''){
         // let searchResult = 'fish'
@@ -16,6 +17,9 @@ function loadMeals(){
         fetch(apiLink)
         .then(res => res.json())
         .then(data => doStuff(data));
+    }
+    else{
+        document.getElementById('empty-text').innerHTML = 'Please enter something'
     }
 }
 
@@ -34,11 +38,13 @@ function doStuff(data){
                 </div>
             `
         }
+        // document.getElementById('empty-text').innerHTML = ''
     }
     else{
         document.getElementById('empty-text').innerHTML = 'Nothing was found with this keyword'
         console.log("empty");
     }
+    
 }
 
 // loadMeals();

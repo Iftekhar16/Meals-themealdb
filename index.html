@@ -35,14 +35,19 @@
     <div class="search-container w-1/2 mx-auto py-40 px-20">
         <div class="container-temp flex items-center">
           <input id="search" class="w-full h-8 border border-color6 bg-color4 focus:border-0 focus:outline-none" type="text" placeholder="Search a category. ex: fish">
-          <button id="btn-search" class="p-3 m-3 h-8 bg-color4 hover:brightness-95 text-color6 border border-color6 flex items-center active:translate-y-1 active:brightness-75" onclick="loadMeals()">Search</button>
+          <button id="btn-search" class="p-3 m-3 h-8 bg-color6 hover:brightness-90 text-color4 border border-color4 flex items-center active:translate-y-1 active:brightness-50" onclick="loadMeals()">Search</button>
         </div>
-        <div class="empty-text text-center" id="empty-text"></div>
+        <div class="empty-text text-center h-8" id="empty-text"></div>
+    </div>
+    
+    <div class="copyright-stuff flex justify-center items-center gap-5 text-center">
+      <!-- <div class="logo border border-9-6 rounded-full h-[15px] w-[15px] font-bold flex justify-center items-center text-xs">C</div> -->
+      <div class="text text-[0.8rem]">from <span class="underline">themealdb.com</span></div>
     </div>
 
     <div class="meals-container" id="meals-container">
         <div class="wrapper max-w-[65rem] mx-auto grid grid-cols-3 gap-8 mb-40" id="wrapper">
-
+          
         </div>
     </div>
 
